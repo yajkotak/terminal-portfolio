@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    font-family: 'Fira Code', monospace;
+    background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+    color: #61dafb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    animation: gradientShift 10s ease infinite;
+}
+
+@keyframes gradientShift {
+    0%, 100% {
+        background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+    }
+    50% {
+        background: linear-gradient(135deg, #1a1a1a, #0f0f0f);
+    }
+}
+
+.terminal {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 15px;
+    width: 80%;
+    max-width: 700px;
+    height: 65%;
+    overflow-y: auto;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+    position: relative;
+}
+
+#output {
+    white-space: pre-wrap;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.input-line {
+    display: flex;
+}
+
+.prompt {
+    color: #61dafb;
+    padding-right: 5px;
+}
+
+input {
+    background: none;
+    border: none;
+    color: #61dafb;
+    font-size: 16px;
+    width: 100%;
+    outline: none;
+    caret-color: #61dafb;
+}
+
+input::placeholder {
+    color: #61dafb;
+}
+
+a {
+    color: #61dafb;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.blinking-cursor {
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Dynamic scrollbar color using custom property */
+:root {
+    --scrollbar-color: #61dafb;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-color);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #1e1e1e;
+}
