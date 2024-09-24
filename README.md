@@ -1,4 +1,4 @@
-# Yaj Kotak's Interactive Terminal Portfolio
+# Interactive Terminal Portfolio
 
 This is an interactive terminal-style portfolio that showcases my education, projects, and personal details in a retro-style command-line interface. It includes customizable themes, command history, and fluid animations for a smooth and engaging user experience.
 
@@ -46,3 +46,11 @@ Type `/help` in the terminal interface to see the available commands. You can ex
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+If you have any questions or feedback, you can reach me through the following methods:
+
+  <a href="https://www.linkedin.com/in/yajkotak" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-Yaj_Kotak-blue?style=for-the-badge&logo=linkedin" alt="LinkedIn">
+  </a>
